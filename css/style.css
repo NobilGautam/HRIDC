@@ -161,11 +161,13 @@ a,
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     max-width: 540px; /* Optional: Limit maximum width */
+    border-radius: 1rem;
 }
 
 img {
     max-width: 100%;
     height: 100%;
+    border-radius: 1rem;
 }
 
  :focus {
@@ -289,7 +291,8 @@ button.donate_btn {
     font-size: 18px;
     color: #666666;
     background: transparent;
-    border: 1px solid #f64646;
+    border: 1px solid #75a1d2;
+    border-radius: 0.75rem;
 }
 
 .bg-light {
@@ -311,7 +314,8 @@ button.donate_btn {
     background-size: cover;
     position: relative;
     top: -70px;
-    margin-bottom: 0;
+    margin-bottom: 70px;
+    background-position: center;
 }
 .banner_section::before {
     content: '';
@@ -350,6 +354,7 @@ button.donate_btn {
     width: 150px;
     margin: 0 auto;
     text-align: center;
+    border-radius: 0.75rem;
 }
 
 .read_bt a {
@@ -358,13 +363,14 @@ button.donate_btn {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background-color: #f64646;
+    background-color: #75a1d2;
     padding: 8px 0px;
     text-transform: uppercase;
+    border-radius: 0.75rem;
 }
 
 .read_bt a:hover {
-    background-color: #120a78;
+    background-color: #224e9d;
 }
 
 .carousel-indicators {
@@ -433,7 +439,7 @@ button.donate_btn {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #224e9d;
     padding: 8px 40px;
     text-transform: uppercase;
     margin-top: 20px;
@@ -442,7 +448,7 @@ button.donate_btn {
 }
 
 .send_bt a:hover {
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 .fundraise_section_main {
@@ -459,7 +465,7 @@ button.donate_btn {
 
 .box_main {
     width: 100%;
-    background-color: #120a78;
+    background-color: #224e9d;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
     height: auto;
     padding: 30px 20px 70px 20px;
@@ -493,6 +499,7 @@ button.donate_btn {
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
+    border-radius: 0.75rem;
 }
 
 .join_bt a {
@@ -502,14 +509,15 @@ button.donate_btn {
     text-align: center;
     border: 1px solid #ffffff;
     padding: 5px 15px;
+    border-radius: 0.75rem;
 }
 
 .box_main:hover {
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 .box_main.active {
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 
@@ -521,14 +529,23 @@ button.donate_btn {
 .about_section {
     width: 100%;
     float: left;
-    background-color: #120a78;
+    background-color: #224e9d;
     padding-bottom: 90px;
 }
 
 .about_img {
-    width: 100%;
+    width: auto;
+    height: 100%;
     float: left;
+    overflow: hidden; /* Ensure the image's corners are clipped by the container */
 }
+
+.about_img img {
+    width: auto;
+    height: 100%;
+    border-radius: 1rem; /* Apply border-radius directly to the image */
+}
+
 
 .about_taital {
     width: 100%;
@@ -564,12 +581,13 @@ button.donate_btn {
     color: #ffffff;
     background-color: transparent;
     border: 1px solid #ffffff;
+    border-radius: 0.75rem;
     padding: 8px 0px;
     text-transform: uppercase;
 }
 
 .readmore_bt a:hover {
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 
@@ -577,6 +595,12 @@ button.donate_btn {
 
 
 /* mission section start */
+
+.mission_row {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
 
 .mission_section {
     width: 100%;
@@ -615,6 +639,7 @@ button.donate_btn {
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: 1rem;
 }
 
 .overlay {
@@ -627,7 +652,12 @@ button.donate_btn {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(241, 89, 88, 0.9);
+    background-color: #cee7f8;
+    border-radius: 1rem;
+}
+
+.container{
+    margin-bottom: 200px;
 }
 
 .container_main {
@@ -681,7 +711,7 @@ button.donate_btn {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-    background-color: #f64646;
+    background-color: #75a1d2;
     border: 2px solid #ffffff;
     padding: 8px;
     text-transform: uppercase;
@@ -689,7 +719,7 @@ button.donate_btn {
 
 .donate_bt a:hover {
     color: #ffffff;
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 
@@ -751,7 +781,7 @@ button.donate_btn {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #120a78;
+    color: #224e9d;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -759,7 +789,7 @@ button.donate_btn {
 }
 
 .goal_text {
-    color: #f64646;
+    color: #75a1d2;
     padding-left: 20px;
 }
 
@@ -780,15 +810,16 @@ button.donate_btn {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #224e9d;
     border: 2px solid #ffffff;
     padding: 8px;
     text-transform: uppercase;
+    border-radius: 0.75rem;
 }
 
 .readmore_btn a:hover {
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #224e9d;
 }
 
 .readmore_btn_1 {
@@ -803,15 +834,16 @@ button.donate_btn {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-    background-color: #f64646;
+    background-color: #75a1d2;
     border: 2px solid #ffffff;
     padding: 8px;
     text-transform: uppercase;
+    border-radius: 0.75rem;
 }
 
 .readmore_btn_1 a:hover {
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #224e9d;
 }
 
 
@@ -854,7 +886,7 @@ button.donate_btn {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #120a78;
+    color: #224e9d;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
@@ -865,6 +897,7 @@ button.donate_btn {
     float: left;
     height: 295px;
     position: relative;
+    border-radius: 0.75rem;
 }
 
 .date_bt {
@@ -885,18 +918,18 @@ button.donate_btn {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #224e9d;
     padding: 8px;
     text-transform: uppercase;
 }
 
 .date_text a:hover {
     color: #ffffff;
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 .date_text.active a {
-    background-color: #f64646;
+    background-color: #75a1d2;
 }
 
 
@@ -926,9 +959,10 @@ button.donate_btn {
 
 .donate_taital_main {
     width: 100%;
-    border: 1px solid #b1afd1;
+    border: 1px solid #75a1d2;
     padding: 40px 20px 60px 20px;
     display: flex;
+    border-radius: 1rem;
 }
 
 .donate_left {
@@ -963,7 +997,7 @@ button.donate_btn {
     position: absolute;
     right: -89px;
     top: 23%;
-    background-color: #120a78;
+    background-color: #224e9d;
 }
 
 #main_slider a.carousel-control-prev {
@@ -977,7 +1011,7 @@ button.donate_btn {
 #main_slider .carousel-control-next {
     width: 68px;
     height: 68px;
-    background: #f64646;
+    background: #75a1d2;
     opacity: 1;
     font-size: 30px;
     color: #ffffff;
@@ -987,7 +1021,7 @@ button.donate_btn {
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-    background: #120a78;
+    background: #224e9d;
     color: #ffffff;
 }
 
@@ -1173,7 +1207,7 @@ button.donate_btn {
     width: 10px;
     height: 10px;
     content: "";
-    background-color: #f64646;
+    background-color: #75a1d2;
     position: absolute;
     left: -20px;
     top: 27%;
@@ -1201,7 +1235,7 @@ input.address_text::placeholder {
     width: 40%;
     float: right;
     font-size: 18px;
-    color: #f64646;
+    color: #75a1d2;
     background-color: transparent;
     padding: 10px 0px;
     text-align: center;
