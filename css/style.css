@@ -308,15 +308,27 @@ button.donate_btn {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url('../images/banner-image.jpg');
     height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     top: -70px;
     margin-bottom: 70px;
-    background-position: center;
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
+
+.banner_section video#background-video {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensure the video covers the entire section */
+    pointer-events: none; /* Ensure the video doesn't interfere with other interactions */
+}
+
 .banner_section::before {
     content: '';
     display: block;
