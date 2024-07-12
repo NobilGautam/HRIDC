@@ -157,17 +157,26 @@ a,
     transition: all .3s ease-in-out;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-right: -15px;
+}
+
 .news_img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     max-width: 540px; /* Optional: Limit maximum width */
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 img {
     max-width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
  :focus {
@@ -555,7 +564,8 @@ button.donate_btn {
 .about_img img {
     width: auto;
     height: 100%;
-    border-radius: 1rem; /* Apply border-radius directly to the image */
+    border-radius: 0.5rem; /* Apply border-radius directly to the image */
+    /* max-height: 391.92px; */
 }
 
 
@@ -651,7 +661,7 @@ button.donate_btn {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .overlay {
@@ -665,7 +675,7 @@ button.donate_btn {
     opacity: 0;
     transition: .5s ease;
     background-color: #cee7f8;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .container{
@@ -974,7 +984,7 @@ button.donate_btn {
     border: 1px solid #75a1d2;
     padding: 40px 20px 60px 20px;
     display: flex;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .donate_left {
