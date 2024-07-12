@@ -961,13 +961,32 @@ button.donate_btn {
 /* donate section start */
 
 .donate_section {
+    position: relative;
     width: 100%;
     float: left;
-    background-image: url(../images/donate-bg.png);
+    background-image: url(../images/feedbackbg.jpeg);
     height: auto;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-bottom: 90px;
+    z-index: 0; /* Ensure it's behind the overlay */
+}
+
+.donate_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #224d9d83; /* Blue overlay with 50% opacity */
+    z-index: -1; /* Ensure it's behind content inside .donate_section but in front of the background image */
+}
+
+/* Additional styles for elements inside .donate_section to ensure they are above the overlay */
+.donate_section * {
+    position: relative;
+    z-index: 1;
 }
 
 .donate_taital {
